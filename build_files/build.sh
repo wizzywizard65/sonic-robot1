@@ -44,15 +44,15 @@ dnf install -y btop \
  distrobox \
  virt-manager \
  jetbrains-mono-fonts-all \
- gnome-tweaks\ 
+ gnome-tweaks \ 
  code \
- neovim\
- bash-completion\
- bcc-tools\
- strace\
- tmate\
- code\
- firewall-config\
+ neovim \
+ bash-completion \
+ bcc-tools \
+ strace \
+ tmate \
+ code \
+ firewall-config \
  gvfs-smb
 
 dnf install -y --allowerasing \
