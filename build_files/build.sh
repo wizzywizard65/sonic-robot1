@@ -36,16 +36,17 @@ dnf install -y btop \
  podman-tui \
  podmansh \
  docker-buildx-plugin \
- docker-ce\
- docker-ce-cli\
- docker-compose-plugin\
- docker-model-plugin\
+ docker-ce \
+ docker-ce-cli \
+ docker-compose-plugin \
+ docker-model-plugin \
  flatpak-builder \
- distrobox\
- virt-manager\
- jetbrains-mono-fonts-all\
+ distrobox \
+ virt-manager \
+ jetbrains-mono-fonts-all \
  gnome-tweaks\ 
- code neovim\
+ code \
+ neovim\
  bash-completion\
  bcc-tools\
  strace\
