@@ -44,7 +44,7 @@ dnf install -y btop \
  distrobox \
  virt-manager \
  jetbrains-mono-fonts-all \
- gnome-tweaks \ 
+ gnome-tweaks \
  code \
  neovim \
  bash-completion \
