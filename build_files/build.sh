@@ -14,9 +14,45 @@ dnf install -y \
 
 
 # this installs a package from fedora repos
-dnf install -y btop neovim cockpit cockpit-bridge cockpit-composer cockpit-files cockpit-image-builder cockpit-machines cockpit-networkmanager cockpit-ostree cockpit-packagekit cockpit-podman cockpit-sosreport cockpit-storaged cockpit-system cockpit-ws cockpit-ws-selinux 
-dnf install -y podman-machine podman-compose podman-tui podmansh docker-buildx-plugin docker-ce docker-ce-cli docker-compose-plugin docker-model-plugin flatpak-builder distrobox virt-manager
-dnf install -y jetbrains-mono-fonts-all gnome-tweaks code neovim bash-completion bcc-tools strace tmate code firewall-config gvfs-smb
+dnf install -y btop \
+ neovim \
+ cockpit \
+ cockpit-bridge \
+ cockpit-composer \
+ cockpit-files \
+ cockpit-image-builder \
+ cockpit-machines \
+ cockpit-networkmanager \
+ cockpit-ostree \
+ cockpit-packagekit \
+ cockpit-podman \
+ cockpit-sosreport \
+ cockpit-storaged \
+ cockpit-system \
+ cockpit-ws \
+ cockpit-ws-selinux \
+ podman-machine \
+ podman-compose \
+ podman-tui \
+ podmansh \
+ docker-buildx-plugin \
+ docker-ce\
+ docker-ce-cli\
+ docker-compose-plugin\
+ docker-model-plugin\
+ flatpak-builder \
+ distrobox\
+ virt-manager\
+ jetbrains-mono-fonts-all\
+ gnome-tweaks\ 
+ code neovim\
+ bash-completion\
+ bcc-tools\
+ strace\
+ tmate\
+ code\
+ firewall-config\
+ gvfs-smb
 
 dnf install -y --allowerasing \
     ffmpeg \
