@@ -53,6 +53,7 @@ dnf install -y btop \
  tmate \
  code \
  firewall-config \
+ wireshark \
  gvfs-smb
 
 dnf install -y --allowerasing \
