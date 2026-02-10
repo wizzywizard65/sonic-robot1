@@ -5,8 +5,8 @@ COPY build_files /
 # Base Image
 FROM quay.io/fedora/fedora-silverblue:latest
 COPY system_files /
-#RUN mkdir -p /var/roothome
-#RUN dnf5 update -y
+RUN mkdir -p /var/roothome
+RUN dnf5 update -y
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
