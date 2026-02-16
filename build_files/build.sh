@@ -54,7 +54,8 @@ dnf install -y btop \
  code \
  firewall-config \
  wireshark \
- gvfs-smb
+ gvfs-smb  \
+ tailscale
 
 dnf install -y --allowerasing \
     ffmpeg \

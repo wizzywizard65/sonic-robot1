@@ -8,6 +8,10 @@ COPY system_files /
 RUN mkdir -p /var/roothome
 RUN dnf5 update -y
 
+##tailscale
+
+RUN curl -s -o /etc/yum.repos.d/tailscale.repo https://pkgs.tailscale.com/stable/centos/9/tailscale.repo
+
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
