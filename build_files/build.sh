@@ -31,6 +31,12 @@ dnf install -y btop \
  cockpit-system \
  cockpit-ws \
  cockpit-ws-selinux \
+ containerd.io \
+ docker-buildx-plugin \
+ docker-ce \
+ docker-ce-cli \
+ docker-compose-plugin \
+ docker-model-plugin \
  podman-machine \
  podman-compose \
  podman-tui \
