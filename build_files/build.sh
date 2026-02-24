@@ -47,15 +47,12 @@ dnf install -y btop \
  jetbrains-mono-fonts-all \
  gnome-tweaks \
  code \
- neovim \
  bash-completion \
  bcc-tools \
  strace \
  tmate \
- code \
- firewall-config \
- gvfs-smb  \
- tailscale
+ gvfs-smb  
+
 
 dnf install -y --allowerasing \
     ffmpeg \
