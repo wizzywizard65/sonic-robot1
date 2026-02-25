@@ -7,14 +7,16 @@ set -ouex pipefail
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
-
+dnf -y copr enable gmaglione/podman-bootc
+dnf -y copr enable ublue-os/packages
 dnf install -y \
         https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
         https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 #dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
 # this installs a package from fedora repos
-dnf install -y btop \
+dnf install -y --allowerasing \ 
+ btop \
  neovim \
  cockpit \
  cockpit-bridge \
@@ -51,32 +53,25 @@ dnf install -y btop \
  bcc-tools \
  strace \
  tmate \
- gvfs-smb  
+ gvfs-smb \
+ podman-bootc \
+ uupd \
+ ffmpeg \
+ ffmpegthumbnailer \
+ gstreamer1-vaapi \
+ libavcodec-freeworld \
+ gstreamer1-plugin-openh264 \
+ libva-intel-driver \
+ mozilla-openh264 \
+ gnome-shell-extension-dash-to-dock \
+ gnome-shell-extension-caffeine \
+ gnome-shell-extension-appindicator
 
 
-dnf install -y --allowerasing \
-    ffmpeg \
-    ffmpegthumbnailer \
-    gstreamer1-vaapi \
-    libavcodec-freeworld
-
-dnf install -y \
-    gstreamer1-plugin-openh264 \
-    libva-intel-driver \
-    mozilla-openh264
-
-dnf -y clean all
-#Gnome extensions
-
-dnf install -y gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine gnome-shell-extension-appindicator 
-
-
-#dnf5 install -y fedora-release-ostree-desktop
-dnf -y clean all
 #remove firefox
 
 dnf -y remove firefox
-
+dnf -y clean all
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
@@ -84,11 +79,11 @@ dnf -y remove firefox
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf -y copr enable gmaglione/podman-bootc
-dnf -y install podman-bootc
+#dnf -y copr enable gmaglione/podman-bootc
+#dnf -y install podman-bootc
 dnf -y copr disable gmaglione/podman-bootc
-dnf -y copr enable ublue-os/packages
-dnf -y install uupd
+#dnf -y copr enable ublue-os/packages
+#dnf -y install uupd
 dnf -y copr disable ublue-os/packages
 
 #### Example for enabling a System Unit File
