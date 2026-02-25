@@ -15,7 +15,7 @@ dnf install -y \
 #dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
 # this installs a package from fedora repos
-dnf install -y --allowerasing \ 
+dnf install -y --allowerasing \
  btop \
  neovim \
  cockpit \
