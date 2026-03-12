@@ -58,8 +58,8 @@ dnf install -y --allowerasing \
  libva-intel-driver \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-caffeine \
- gnome-shell-extension-appindicator
-
+ gnome-shell-extension-appindicator \
+ htop
 
 #remove firefox
 
