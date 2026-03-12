@@ -86,5 +86,5 @@ dnf -y copr disable ublue-os/packages
 
 systemctl enable podman.socket
 systemctl enable cockpit.socket
-#systemctl enable docker.socket
+systemctl enable docker.socket
 systemctl enable libvirtd
