@@ -41,6 +41,7 @@ dnf install -y --allowerasing \
  podman-compose \
  podman-tui \
  podmansh \
+ kubectl \
  flatpak-builder \
  distrobox \
  virt-manager \
