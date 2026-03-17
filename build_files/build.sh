@@ -33,10 +33,6 @@ dnf install -y --allowerasing \
  cockpit-system \
  cockpit-ws \
  cockpit-ws-selinux \
- docker-buildx-plugin \
- docker-ce docker-ce-cli \
- docker-compose-plugin \
- docker-model-plugin \
  podman-machine \
  podman-compose \
  podman-tui \
@@ -87,5 +83,5 @@ dnf -y copr disable ublue-os/packages
 
 systemctl enable podman.socket
 systemctl enable cockpit.socket
-systemctl enable docker.socket
+#systemctl enable docker.socket
 systemctl enable libvirtd
