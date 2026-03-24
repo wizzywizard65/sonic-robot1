@@ -37,6 +37,10 @@ dnf install -y --allowerasing \
  podman-compose \
  podman-tui \
  podmansh \
+ docker-buildx-plugin \
+ docker-ce docker-ce-cli \
+ docker-compose-plugin \
+ docker-model-plugin \
  kubectl \
  flatpak-builder \
  distrobox \
@@ -83,5 +87,5 @@ dnf -y copr disable ublue-os/packages
 
 systemctl enable podman.socket
 systemctl enable cockpit.socket
-#systemctl enable docker.socket
+systemctl enable docker.socket
 systemctl enable libvirtd
