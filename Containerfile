@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/fedora-silverblue:latest
+FROM quay.io/fedora/fedora-ostree-desktops/cosmic-atomic:latest
 COPY system_files /
 RUN mkdir -p /var/roothome
 
