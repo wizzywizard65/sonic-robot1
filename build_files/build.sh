@@ -37,6 +37,7 @@ dnf install -y --allowerasing \
  podman-compose \
  podman-tui \
  podmansh \
+ podlet \
  docker-buildx-plugin \
  docker-ce docker-ce-cli \
  docker-compose-plugin \
