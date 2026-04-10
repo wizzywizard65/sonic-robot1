@@ -56,6 +56,11 @@ dnf install -y --allowerasing \
  gvfs-smb \
  podman-bootc \
  uupd \
+ ffmpeg \
+ ffmpegthumbnailer \
+ gstreamer1-vaapi \
+ libavcodec-freeworld \
+ gstreamer1-plugin-openh264 \
  libva-intel-driver \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-caffeine \
