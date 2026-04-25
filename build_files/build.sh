@@ -91,4 +91,4 @@ systemctl enable podman.socket
 systemctl enable cockpit.socket
 systemctl enable docker.socket
 systemctl enable libvirtd
-systemctl enable tailscale
+systemctl enable tailscaled
