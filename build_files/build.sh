@@ -64,7 +64,8 @@ dnf install -y --allowerasing \
  libva-intel-driver \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-caffeine \
- gnome-shell-extension-appindicator
+ gnome-shell-extension-appindicator \
+ tailscale
 
 #remove firefox
 
@@ -90,3 +91,4 @@ systemctl enable podman.socket
 systemctl enable cockpit.socket
 systemctl enable docker.socket
 systemctl enable libvirtd
+systemctl enable tailscale
