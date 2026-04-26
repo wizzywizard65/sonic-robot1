@@ -9,7 +9,6 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 dnf -y copr enable gmaglione/podman-bootc
 dnf -y copr enable ublue-os/packages
-dnf install -y \
         https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
         https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 #dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
@@ -56,12 +55,6 @@ dnf install -y --allowerasing \
  gvfs-smb \
  podman-bootc \
  uupd \
- ffmpeg \
- ffmpegthumbnailer \
- gstreamer1-vaapi \
- libavcodec-freeworld \
- gstreamer1-plugin-openh264 \
- libva-intel-driver \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-caffeine \
  gnome-shell-extension-appindicator \
