@@ -9,8 +9,6 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 dnf -y copr enable gmaglione/podman-bootc
 dnf -y copr enable ublue-os/packages
-        https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-        https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 #dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
 # this installs a package from fedora repos
