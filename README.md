@@ -5,7 +5,7 @@ This image is based on Fedora Silverblue. I used a Universal blue template to pr
 
 # How to Use
 
-Install Fedora Silverblue then just switch to it with the command: bootc switch https://github.com/wizzywizard65/sonic-robot1
+Install Fedora Silverblue then just switch to it with the command: bootc switch ghcr.io/wizzywizard65/sonic-robot:latest
 
 
 ## Community Examples
