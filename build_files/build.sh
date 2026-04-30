@@ -55,8 +55,7 @@ dnf install -y --allowerasing \
  uupd \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-caffeine \
- gnome-shell-extension-appindicator \
- tailscale
+ gnome-shell-extension-appindicator 
 
 #remove firefox
 
@@ -82,4 +81,4 @@ systemctl enable podman.socket
 systemctl enable cockpit.socket
 systemctl enable docker.socket
 systemctl enable libvirtd
-systemctl enable tailscaled
+
