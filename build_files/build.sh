@@ -54,7 +54,6 @@ dnf install -y --allowerasing \
  podman-bootc \
  uupd \
  gnome-shell-extension-dash-to-dock \
- gnome-shell-extension-caffeine \
  gnome-shell-extension-appindicator \
  tailscale \
  gvisor-tap-vsock
