@@ -11,10 +11,19 @@ dnf -y copr enable gmaglione/podman-bootc
 dnf -y copr enable ublue-os/packages
 #dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
-# this installs a package from fedora repos
+# development and CLI tools
+
 dnf install -y --allowerasing \
  btop \
  neovim \
+ code \
+ bash-completion \
+ bcc-tools \
+ strace \
+ tmate 
+
+ # Cockpit for system management and related packages
+ dnf install -y --allowerasing \
  cockpit \
  cockpit-bridge \
  cockpit-composer \
@@ -29,7 +38,10 @@ dnf install -y --allowerasing \
  cockpit-storaged \
  cockpit-system \
  cockpit-ws \
- cockpit-ws-selinux \
+ cockpit-ws-selinux 
+
+ # podman and related tools
+ dnf install -y --allowerasing \
  podman-machine \
  podman-compose \
  podman-tui \
@@ -40,18 +52,16 @@ dnf install -y --allowerasing \
  docker-compose-plugin \
  docker-model-plugin \
  kubectl \
- flatpak-builder \
  distrobox \
+ podman-bootc \
+ flatpak-builder
+
+ #Desktop tools and utilities
+ dnf install -y --allowerasing \
  virt-manager \
  jetbrains-mono-fonts-all \
  gnome-tweaks \
- code \
- bash-completion \
- bcc-tools \
- strace \
- tmate \
  gvfs-smb \
- podman-bootc \
  uupd \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-appindicator \
