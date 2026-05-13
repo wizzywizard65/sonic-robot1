@@ -1,6 +1,10 @@
 #!/bin/bash
 
 set -ouex pipefail
+
+# Update system packages for security patches
+dnf -y update
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -69,6 +73,7 @@ dnf install -y --allowerasing \
 #remove firefox
 
 dnf -y remove firefox
+dnf -y autoremove
 dnf -y clean all
 # Use a COPR Example:
 #
@@ -84,7 +89,8 @@ dnf -y copr disable gmaglione/podman-bootc
 #dnf -y install uupd
 dnf -y copr disable ublue-os/packages
 
-#### Example for enabling a System Unit File
+#### Enable System Unit Files
+# Enable services for container management, system monitoring, and networking
 
 systemctl enable podman.socket
 systemctl enable cockpit.socket
