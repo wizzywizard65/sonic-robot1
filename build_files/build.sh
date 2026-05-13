@@ -55,8 +55,7 @@ dnf install -y --allowerasing \
  uupd \
  gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-appindicator \
- tailscale \
- gvisor-tap-vsock
+ tailscale 
 #remove firefox
 
 dnf -y remove firefox
