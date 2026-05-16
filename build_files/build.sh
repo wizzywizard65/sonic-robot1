@@ -23,8 +23,8 @@ dnf install -y --allowerasing \
  code \
  bash-completion \
  bcc-tools \
- strace \
- tmate 
+ strace 
+ 
 
  # Cockpit for system management and related packages
  dnf install -y --allowerasing \
