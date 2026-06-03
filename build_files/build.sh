@@ -2,8 +2,7 @@
 
 set -ouex pipefail
 
-# Update system packages for security patches
-dnf -y update
+
 
 ### Install packages
 
