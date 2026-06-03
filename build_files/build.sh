@@ -12,7 +12,6 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 dnf -y copr enable gmaglione/podman-bootc
 dnf -y copr enable ublue-os/packages
-#dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
 
 # development and CLI tools
 
