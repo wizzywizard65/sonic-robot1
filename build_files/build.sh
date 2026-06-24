@@ -56,7 +56,8 @@ dnf install -y --allowerasing \
  kubectl \
  distrobox \
  podman-bootc \
- flatpak-builder
+ flatpak-builder \
+ tmux
 
  #Desktop tools and utilities
  dnf install -y --allowerasing \
