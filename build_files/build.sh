@@ -57,7 +57,8 @@ dnf install -y --allowerasing \
  distrobox \
  podman-bootc \
  flatpak-builder \
- tmux
+ tmux \
+ bcvk
 
  #Desktop tools and utilities
  dnf install -y --allowerasing \
