@@ -67,7 +67,6 @@ dnf install -y --allowerasing \
  gnome-tweaks \
  gvfs-smb \
  uupd \
- gnome-shell-extension-dash-to-dock \
  gnome-shell-extension-appindicator \
  tailscale 
 #remove firefox
